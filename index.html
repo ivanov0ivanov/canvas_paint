@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Paint 2.0.0 (--beta4)</title>
+</head>
+<body class="pt-2">
+<canvas id="paint">OLD BROWSER</canvas>
+
+<div class="controls p-3 pl-4 pb-0">
+    <div class="d-flex">
+        <div class="mr-4 align-self-center">
+            <label for="setColors" class="font-weight-bold m-0">Choose pen color:
+                <span id="showColor" class="p-1 pl-3 pr-3 ml-1 rounded-circle show_color"> </span>
+            </label>
+            <input type="color" id="setColors" class="d-none">
+        </div>
+        <div>
+            <button id="save" class="btn btn-success btn-save">save</button>
+            <button id="replay" class="btn btn-info btn-replay">replay</button>
+            <button id="clear" class="btn btn-danger btn-clear">clear</button>
+            <p class="font-weight-bold m-0">
+                You can use the keys:
+                '<span class="text-success">S</span>'- Save
+                '<span class="text-info">R</span>'- Replay
+                '<span class="text-danger">C</span>'- Clean
+            </p>
+        </div>
+    </div>
+    <div class="w-50" style="line-height: 1">
+        <label for="customRange3" class="font-weight-bold m-0">Pen size:</label>
+        <div class="d-flex">
+            <input type="range" min="1" max="100" class="custom-range" id="customRange3">
+            <p id="customRangeProgress" class="ml-2 custom-range_progress"> </p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

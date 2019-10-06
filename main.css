@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #dc8362;
+    background: url("png/cell.png") #ffe5a8;
+}
+
+.show_color {
+    border: 3px solid #ffffff;
+}
+
+.circle-pen {
+    display: inline-block;
+    position: absolute;
+    /*padding: 10px;*/
+    border: 2px solid #1b1e21;
+    -webkit-user-select: none;
+}
